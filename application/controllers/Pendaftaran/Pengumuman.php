@@ -1,0 +1,63 @@
+<?php
+
+class Pengumuman extends CI_Controller
+{
+
+	// public function __construct()
+	// {
+	// 	parent::__construct();
+	// 	not_auth_check();
+	// 	check_page_calon_siswa($_SESSION['role_id']);
+	// 	$this->load->model('m_pembayaran', 'pembayaran');
+	// }
+
+	public function index()
+	{
+
+		$data = [
+			'title' => 'Pengumuman',
+			'view' => 'pendaftaran/pengumuman',
+		];
+
+		$this->load->view('pendaftaran/template/app', $data);
+		// $check = $this->checkKelengkapanBiodata();
+		// $user = $this->m_user->byEmail($this->session->userdata('email'));
+		// $data = [
+		// 	'title'	=> 'Pengumuman',
+		// 	'check' => $check,
+		// 	'user'	=> $user,
+		// 	'view' 	=> 'pendaftaran/pengumuman'
+		// ];
+		// $this->load->view('pendaftaran/template/app', $data);
+	}
+
+	public function lulus()
+	{
+
+		$data = [
+			'title' => 'Pengumuman',
+			'view' => 'pendaftaran/pengumuman2',
+		];
+
+		$this->load->view('pendaftaran/template/app', $data);
+		// $check = $this->checkKelengkapanBiodata();
+		// $user = $this->m_user->byEmail($this->session->userdata('email'));
+		// $data = [
+		// 	'title'	=> 'Pengumuman',
+		// 	'check' => $check,
+		// 	'user'	=> $user,
+		// 	'view' 	=> 'pendaftaran/pengumuman'
+		// ];
+		// $this->load->view('pendaftaran/template/app', $data);
+	}
+
+	// private function checkKelengkapanBiodata()
+	// {
+	// 	$user = $this->m_user->checkBiodata();
+	// 	if (in_array(null, $user) || in_array("", $user)) {
+	// 		return true;
+	// 	} else {
+	// 		return false;
+	// 	}
+	// }
+}
